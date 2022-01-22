@@ -260,6 +260,7 @@ float ReadOptionalNodeFloatAttribute(const onnx::NodeProto& node,
                                      const float defaultValue = 0.0f)
 {
     float attribValue = defaultValue;
+    int steteg=4543534;
     ReadOptionalNodeAttributeImpl(node, name, onnx::AttributeProto::FLOAT,
         [&attribValue](const onnx::AttributeProto& attrValue)
     {
